@@ -1,1474 +1,275 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1347.57">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
-    span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
-    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    td.td1 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
-    td.td2 {width: 774.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 5px;
+    }
+    nav {
+      background-color: #555;
+      color: white;
+      padding: 5px;
+    }
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 250px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+      .glyphicon {
+    font-size: 25px;
+      }
+      h2 {
+    color: #C14802;
+      }
+      .progress {background: rgba(245, 245, 245, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 4px; height: 10px;}
+.progress-bar-custom {background: rgba(66, 139, 202, 1);}
   </style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="blog-masthead"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="container"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;nav class="blog-nav"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a class="blog-nav-item active" href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Home&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a class="blog-nav-item" href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;New features&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a class="blog-nav-item" href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Press&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a class="blog-nav-item" href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;New hires&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a class="blog-nav-item" href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;About&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/nav&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="container"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="blog-header"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h1 class="blog-title"&gt;The Bootstrap Blog&lt;/h1&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="lead blog-description"&gt;The official example template of creating a blog with Bootstrap.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="row"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="col-sm-8 blog-main"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="blog-post"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2 class="blog-post-title"&gt;Sample blog post&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="blog-post-meta"&gt;January 1, 2014 by &lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Mark&lt;/a&gt;&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;hr&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;blockquote&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Curabitur blandit tempus porttitor. &lt;strong&gt;Nullam quis risus eget urna mollis&lt;/strong&gt; ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/blockquote&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Etiam porta &lt;em&gt;sem malesuada magna&lt;/em&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2&gt;Heading&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h3&gt;Sub-heading&lt;/h3&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;pre&gt;&lt;code&gt;Example code block&lt;/code&gt;&lt;/pre&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h3&gt;Sub-heading&lt;/h3&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ul&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ol&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Vestibulum id ligula porta felis euismod semper.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Maecenas sed diam eget risus varius blandit sit amet non magna.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ol&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.blog-post --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="blog-post"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2 class="blog-post-title"&gt;Another blog post&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="blog-post-meta"&gt;December 23, 2013 by &lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Jacob&lt;/a&gt;&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cum sociis natoque penatibus et magnis &lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;dis parturient montes&lt;/a&gt;, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;blockquote&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Curabitur blandit tempus porttitor. &lt;strong&gt;Nullam quis risus eget urna mollis&lt;/strong&gt; ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/blockquote&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Etiam porta &lt;em&gt;sem malesuada magna&lt;/em&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.blog-post --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="blog-post"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h2 class="blog-post-title"&gt;New feature&lt;/h2&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p class="blog-post-meta"&gt;December 14, 2013 by &lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Chris&lt;/a&gt;&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ul&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Praesent commodo cursus magna, vel scelerisque nisl consectetur et.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Donec id elit non mi porta gravida at eget metus.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;Nulla vitae elit libero, a pharetra augue.&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Etiam porta &lt;em&gt;sem malesuada magna&lt;/em&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.blog-post --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;nav&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ul class="pager"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Previous&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Next&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ul&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/nav&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.blog-main --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="col-sm-3 col-sm-offset-1 blog-sidebar"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="sidebar-module sidebar-module-inset"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h4&gt;About&lt;/h4&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Etiam porta &lt;em&gt;sem malesuada magna&lt;/em&gt; mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="sidebar-module"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h4&gt;Archives&lt;/h4&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ol class="list-unstyled"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;March 2014&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;February 2014&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;January 2014&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;December 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;November 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;October 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;September 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;August 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;July 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;June 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;May 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;April 2013&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ol&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;div class="sidebar-module"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;h4&gt;Elsewhere&lt;/h4&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;ol class="list-unstyled"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;GitHub&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Twitter&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;li&gt;&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Facebook&lt;/a&gt;&lt;/li&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/ol&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.blog-sidebar --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.row --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/div&gt;&lt;!-- /.container --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;footer class="blog-footer"&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;Blog template built for &lt;a href="<a href="http://getbootstrap.com/"><span class="s2">http://getbootstrap.com</span></a>"&gt;Bootstrap&lt;/a&gt; by &lt;a href="<a href="https://twitter.com/mdo"><span class="s2">https://twitter.com/mdo</span></a>"&gt;@mdo&lt;/a&gt;.&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;a href="<a href="http://getbootstrap.com/examples/blog/#"><span class="s2">#</span></a>"&gt;Back to top&lt;/a&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/p&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/footer&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Bootstrap core JavaScript</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">================================================== --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- Placed at the end of the document so the pages load faster --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s3">&lt;script src="<a href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"><span class="s2">https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js</span></a>"&gt;&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;script&gt;window.jQuery || document.write('&lt;script src="../../assets/js/vendor/jquery.min.js"&gt;&lt;\/script&gt;')&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s3">&lt;script src="<a href="http://getbootstrap.com/dist/js/bootstrap.min.js"><span class="s2">../../dist/js/bootstrap.min.js</span></a>"&gt;&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;!-- IE10 viewport hack for Surface/desktop Windows 8 bug --&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p3"><span class="s3">&lt;script src="<a href="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"><span class="s2">../../assets/js/ie10-viewport-bug-workaround.js</span></a>"&gt;&lt;/script&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p2"><span class="s1">&lt;/html&gt;</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s1"></span><br></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+
+<footer class="container-fluid">
+  <p></p>
+</footer>    
+    
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-sm-3 sidenav">
+      <div class="row">
+            <div class="col-sm-12">
+                <center><h1>Aniekan Inoyo</h1>
+        <img src="headshot.jpg" class="img-rounded" alt="Cinque Terre" width=200></center>
+            </div>
+        </div>
+        <br><br>
+        <div class="row" style="padding: 0px 15px 0px 15px">
+            <div class="col-sm-2">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </div>
+            <div class="col-sm-10"><p>I am a dedicated individual, an enthusiastic team member, and a dauntless leader.<br><br>US CItizen</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row" style="padding: 0px 15px 0px 15px">
+            <div class="col-sm-2">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+            </div>
+            <div class="col-sm-10">
+                <a href="tel:214-455-8236">(214)-455-8236</a>
+                <br><span>mobile</span>
+                <br><br><a href="tel:972-322-3459">(121)-323-3494</a>
+                <br><span>work</span>
+            </div>
+        </div>
+        <br><br>
+        <div class="row" style="padding: 0px 15px 0px 15px">
+            <div class="col-sm-2">
+                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+            </div>
+            <div class="col-sm-10">
+                <a href="mailto:aniekan.inoyo@gmail.com">aniekan.inoyo@gmail.com</a>
+                <br><span>personal</span>
+                <br><br><a href="mailto:ai082p@att.com">ai082p@att.com</a>
+                <br><span>work</span>
+            </div>
+        </div>
+        <br><br>
+                <div class="row" style="padding: 0px 15px 0px 15px">
+            <div class="col-sm-2">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+            </div>
+            <div class="col-sm-10">
+                <b>3600 Alma Rd</b> #4423
+                <br><b>Richardson, TX</b>
+                <br>75080 USA
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>                
+            </div>
+        </div>
+    </div> 
+
+    <div class="col-sm-9">
+        <div class="col-sm-12">
+            <h2>Education</h2>
+            <div class="col-sm-12"><h4>Bachelor of Science, Mechanical Engineering <small>Boston University, Boston, MA</small></h4>
+            <p><span class="label label-primary">2011-2015</span>                    Concentration: Technology Innovation -  Cumulative                    GPA: 3.39/4.00</p>
+            <br>
+            <h4>Mechanical Engineering <small>Université Joseph                     Fourier, Grenoble, FRANCE</small></h4>
+            <p><span class="label label-primary">2013</span> College of Engineering Study Abroad Program</p>
+            <br>
+            <h4>Choate Rosemary Hall <small>Wallingford, CT</small></h4>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+         <hr>
+            <h2>Skills</h2>
+                <div class="col-sm-12">
+                <div class="col-sm-4">
+                    HTML/CSS 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    LaTeX 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    MATLAB 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    SolidWorks Design 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    French Language 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    COMSOL Multiphysics 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    Microsoft Office 
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            
+         <hr>
+            <h2>Work Experience</h2>   
+            <div class="col-sm-12">
+            <h4>Tech-Spec Social Media Manager <small>AT&T Technology Operations, Richardson, TX</small></h4>
+                <p><span class="label label-primary">Jun 2015 - Present</span> AT&T <b>Technology Development Program</b> for recent college graduates. Content  and data analytics manager for the Digital Adoption Social Media Organization. Technical publishing for the AT&T U-verse and DIRECTV <a href="https://forums.att.com" target="_blank">Community Forums</a>, and <a href="https://twitter.com/attcares" target="_blank">@ATTCares</a> Twitter handle. Three years of on-the-job training, fast-paced learning opportunities and hands-on experience including planning, designing, building and maintaining one of the largest networks in the world.</p>
+                
+            <br>
+            <h4>Inspriation Ambassador <small>Technology Innovation Scholars Program, Boston University, Boston, MA</small></h4>
+            <p><span class="label label-primary">Sep 2012 - May 2015</span> Technology Innovation Scholars Program recruits and trains Boston University’s most talented engineering majors and sends them into elementary, middle and high schools around the country to show young people the transformative impact engineering can have on their lives and on society. Mentoring high school robotics teams.</p>
+            <br>
+            <h4>Engineering Intern <small>Chevron Nigeria Limited, Lagos, Nigeria</small></h4>
+            <p><span class="label label-primary">Summer 2012, 2014</span> While employed under the Facilities Engineering and Major Capital Projects Division; worked on Facilities Information Management initiative, attended employee design trainings, and shadowed Engineers in the field. Under the Strategy Business and Planning Department; worked on organizing reports and performing financial analyses.
+                <br><br>
+                Training in the following courses: <ul><li>Design, Fabrication, Inspection, Repair, and Alteration of Pressure Vessels</li><li>The Layout of Piping Systems and Process Equipment</li></ul> </p>
+            <br>
+            <h4>Program Coordinator <small>Artemis Project, Boston University, Boston, MA</small></h4>
+            <p><span class="label label-primary">Summer 2013</span> Coordinator for Boston University’s Artemis Project for rising 9th grade girls who are interested in Computer science and Engineering. Job requirements included accepting girls for the summer, planning company visits, inviting guest speakers, teaching various computer science and general engineering topics, interviewing and choosing coordinators for the following year.</p>
+            </div> 
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <hr>
+            <h2>Projects</h2>   
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="461pic.png" class="img-rounded" alt="461" width=200>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Senior Capstone Design Project <small>Boston University, Boston, MA</small></h4>
+            <p><span class="label label-primary">Nov 2014 - May 2015</span> The goal of the project is to design a <b>Shoe Cleaning Device</b> for the soles of shoes that targets bacteria at a microscopic level. The design will be specialized for domestic use in conjunction with, rather than in replacement of, a standard doormat. Aimed at the 30-50 year old age bracket, the resulting product will transform the way people think about bacteria in the home, creating an attitude that actively pursues leaving the street at the door.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="460pic.png" class="img-rounded" alt="461" width=200>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Electro-Mechanical System Design <small>Boston University, Boston, MA</small></h4>
+                        <p><span class="label label-primary">Fall 2014</span> Presented a Preliminary Design Review for an <b>Automated Seeding Process</b> for Plant Based Pharmaceutical Factories. Project included analysis on the conceptual design selections and financial justification for the process.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="heattransfer.png" class="img-rounded" alt="461" width=200>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Saute Pan Design and Analysis <small>Heat Transfer, Boston University</small></h4>
+                        <p><span class="label label-primary">Spring 2014</span> Using COMSOL Multiphysics to obtain certain objectives on a designed sauté pan first analysed by deriving the heat transfer coefficient and rate of heat transfer for the scenario.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="eMenu.png" class="img-rounded" alt="461" width=200>
+                    </div>
+                    <div class="col-sm-9">
+                        <h4>Electric Menu Business Plan <small>Business and Technology Innovation, Boston University</small></h4>
+                        <p><span class="label label-primary">Spring 2014</span> Constructed a business plan for an innovative technology: An electric menu, <i>eMenu</i>, directed towards fine dining industries. Formulated a business plan for the startup including financial models, SolidWorks design and rendering for product software and hardware.</p>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <hr>    
+            <h2>Organizations</h2>   
+            <div class="col-sm-12">
+                <h4>National Society of Black Engineers <small><span class="label label-primary">2012 - Present</span></small>
+                </h4>
+            <p>
+                <ul>
+                    <li>Dallas/Fort-Worth Professionals Chapter Executive Board - <b>Current </b>Collegiate Chair</li>
+                    <li>Region 1 Executive Board - International Committee Chair <i>(West Africa, East Canada)</i></li>
+                    <li>Boston University Chapter Executive Board - Vice-Chair</li>
+                </ul>
+            </p>
+            <br>
+        <h4>Society of Women Engineers <small>Boston University, Student Mentor</small></h4>
+           
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<footer class="container-fluid">
+    <p><center>"<i>She is clothed with</i> <b>strength</b> <i>and</i> <b>dignity</b><i>, and she laughs without fear of the future.</i>"</center> </p>
+</footer>
+
 </body>
 </html>
